@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130927150606) do
+ActiveRecord::Schema.define(version: 20130927164235) do
 
   create_table "movies", force: true do |t|
     t.string   "title"
@@ -20,6 +20,8 @@ ActiveRecord::Schema.define(version: 20130927150606) do
     t.integer  "rating"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "gif"
+    t.text     "youtube_id"
   end
 
 end
