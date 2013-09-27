@@ -1,11 +1,15 @@
 
-<h1> <%= @movie.title %><br /> </h1>
+<h2> <%= @movie.title %><br /> </h2>
 
 <iframe width='560' height='315' src='//www.youtube.com/embed/<%= @movie.youtube_id %>' frameborder='0' allowfullscreen></iframe>
 
 <br />
 <br />
 <%= @movie.description %>
+<br />
+<br />
+<h4>Extra Commentary </h4>
 
+<p>Ahahahahahaha I did it!!! Sick!!!</p>
 
-
+<%= image_tag @movie.gif %>
